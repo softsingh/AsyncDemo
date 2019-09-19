@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace AsyncDemo
 {
-    class MyFileCopy: IDisposable
+    class MyFileCopy
     {
         double TotalFiles = 0, FilesCompleted = 0;
         IProgress<int> progress;
@@ -18,11 +18,6 @@ namespace AsyncDemo
 
         object SemaphoreLock = new object();
         object ProgressLock = new object();
-
-        public void Dispose()
-        {
-            ((IDisposable)Semaphore).Dispose();
-        }
 
         public MyFileCopy(IProgress<int> p)
         {
