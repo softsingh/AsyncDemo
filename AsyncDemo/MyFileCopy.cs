@@ -80,12 +80,8 @@ namespace AsyncDemo
                     buffer = new byte[inStream.Length - inStream.Position];
                     inStream.Read(buffer, 0, buffer.Length);
                     outStream.Write(buffer, 0, buffer.Length);
-
                     outStream.Flush();
-                    //outStream.Close();
                 }
-
-                //inStream.Close();
                 buffer = null;
             }
 
