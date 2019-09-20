@@ -32,7 +32,7 @@
             this.txtDestination = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnStart = new System.Windows.Forms.Button();
+            this.btnCopyFiles = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.ProgressBar1 = new System.Windows.Forms.ProgressBar();
             this.lblProgress = new System.Windows.Forms.Label();
@@ -72,20 +72,20 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Destination:";
             // 
-            // BtnStart
+            // btnCopyFiles
             // 
-            this.btnStart.Location = new System.Drawing.Point(318, 157);
-            this.btnStart.Name = "BtnStart";
-            this.btnStart.Size = new System.Drawing.Size(75, 23);
-            this.btnStart.TabIndex = 4;
-            this.btnStart.Text = "Start";
-            this.btnStart.UseVisualStyleBackColor = true;
-            this.btnStart.Click += new System.EventHandler(this.BtnStart_Click);
+            this.btnCopyFiles.Location = new System.Drawing.Point(310, 157);
+            this.btnCopyFiles.Name = "btnCopyFiles";
+            this.btnCopyFiles.Size = new System.Drawing.Size(83, 23);
+            this.btnCopyFiles.TabIndex = 4;
+            this.btnCopyFiles.Text = "Copy Files";
+            this.btnCopyFiles.UseVisualStyleBackColor = true;
+            this.btnCopyFiles.Click += new System.EventHandler(this.btnCopyFiles_Click);
             // 
-            // BtnExit
+            // btnExit
             // 
             this.btnExit.Location = new System.Drawing.Point(399, 157);
-            this.btnExit.Name = "BtnExit";
+            this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 5;
             this.btnExit.Text = "Exit";
@@ -140,7 +140,7 @@
             this.Controls.Add(this.lblProgress);
             this.Controls.Add(this.ProgressBar1);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnStart);
+            this.Controls.Add(this.btnCopyFiles);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtDestination);
@@ -158,7 +158,7 @@
         private System.Windows.Forms.TextBox txtDestination;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Button btnCopyFiles;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.ProgressBar ProgressBar1;
         private System.Windows.Forms.Label lblProgress;

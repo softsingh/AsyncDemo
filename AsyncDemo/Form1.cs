@@ -16,7 +16,7 @@ namespace AsyncDemo
             Close();
         }
 
-        private async void BtnStart_Click(object sender, EventArgs e)
+        private async void btnCopyFiles_Click(object sender, EventArgs e)
         {
             if (!Directory.Exists(txtSource.Text))
             {
@@ -24,7 +24,7 @@ namespace AsyncDemo
                 return;
             }
 
-            btnStart.Enabled = false;
+            btnCopyFiles.Enabled = false;
             btnExit.Enabled = false;
 
             if (!Directory.Exists(txtDestination.Text))
@@ -50,7 +50,7 @@ namespace AsyncDemo
             }
             finally
             {
-                btnStart.Enabled = true;
+                btnCopyFiles.Enabled = true;
                 btnExit.Enabled = true;
             }
         }
